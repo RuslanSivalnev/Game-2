@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+
+}
+
+.game{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+
+}
+
+    .game .header{
+        height: 10vmin;
+        width: 80vmin;
+        font-size: 10vmin;
+        box-sizing: border-box;
+        text-align: center;
+    
+    }
+
+    .game .field{
+        display: flex;
+        height: 80vmin;
+        width: 80vmin;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: wheat;
+
+    }
+   
+    .game .footer{
+    height: 7vmin;
+    width: 100%;
+    font-size: 5vmin;
+    box-sizing: border-box;
+    text-align: center;
+   
+    }
+
+    .game .field .cell{
+        height: 18vmin;
+        width: 18vmin;
+        margin: 1vmin;
+        box-sizing: border-box;
+        border: 1px solid red;
+        border-radius: 2px;
+   
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
