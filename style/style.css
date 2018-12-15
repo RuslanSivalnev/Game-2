@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
 }
 
@@ -25,6 +26,9 @@ html, body{
 }
 
     .game .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
         height: 10vmin;
         width: 80vmin;
         font-size: 10vmin;
@@ -39,31 +43,245 @@ html, body{
         width: 80vmin;
         flex-direction: row;
         flex-wrap: wrap;
-        background: wheat;
-
+        background: rgba(245, 222, 179, 0.856);
+        position: relative;
+        border-radius: 7px;
+        box-shadow: 10px 10px 100px 5px rgba(245, 222, 179, 0.856)
     }
    
     .game .footer{
-    height: 7vmin;
-    width: 100%;
-    font-size: 5vmin;
-    box-sizing: border-box;
-    text-align: center;
+        height: 7vmin;
+        width: 100%;
+        font-size: 5vmin;
+        box-sizing: border-box;
+        text-align: center;
    
     }
 
     .game .field .cell{
         height: 18vmin;
         width: 18vmin;
-        margin: 1vmin;
-        box-sizing: border-box;
-        border: 1px solid red;
-        border-radius: 2px;
+        margin: 0.5vmin;
+        border: 0.5vmin solid rgba(255,30,30,0.5);
+        border-radius: 7px;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
    
     }
-
-
-
+    #x{
+        background-image: url(../img/12.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .game .field .empti{
+        background: transparent;
+        margin: 1vmin;
+    }
+    .game .field .cell[data = '0']{
+        background-image: url(../img/128/1.png);
+       
+    }
+    .game .field .cell[data = '1']{
+        background-image: url(../img/128/2.png);
+       
+    }
+    .game .field .cell[data = '2']{
+        background-image: url(../img/128/3.png);
+     
+    }
+    .game .field .cell[data = '3']{
+        background-image: url(../img/128/4.png);
+    
+    }
+    .game .field .cell[data = '4']{
+        background-image: url(../img/128/5.png);
+     
+    }
+    .game .field .cell[data = '5']{
+        background-image: url(../img/128/6.png);
+     
+    }
+    .game .field .cell[data = '6']{
+        background-image: url(../img/128/7.png);
+        
+    }
+    .game .field .cell[data = '7']{
+        background-image: url(../img/128/8.png);
+      
+    }
+    .game .field .cell[data = '8']{
+        background-image: url(../img/128/9.png);
+      
+    }
+    .game .field .cell[data = '9']{
+        background-image: url(../img/128/10.png);
+       
+    }
+    .game .field .cell[data = '10']{
+        background-image: url(../img/128/11.png);
+      
+    }
+    .game .field .cell[data = '11']{
+        background-image: url(../img/128/12.png);
+     
+    }
+    .game .field .cell[data = '12']{
+        background-image: url(../img/128/13.png);
+     
+    }
+    .game .field .cell[data = '13']{
+        background-image: url(../img/128/14.png);
+     
+    }
+    .game .field .cell[data = '14']{
+        background-image: url(../img/128/15.png);
+       
+    }
+    .game .field .cell[data = '15']{
+        background-image: url(../img/128/16.png);
+      
+    }
+    .game .field .cell[data = '16']{
+        background-image: url(../img/128/17.png);
+     
+    }
+    .game .field .cell[data = '17']{
+        background-image: url(../img/128/18.png);
+        
+    }
+    .game .field .cell[data = '18']{
+        background-image: url(../img/128/19.png);
+     
+    }
+    .game .field .cell[data = '19']{
+        background-image: url(../img/128/20.png);
+      
+    }
+    .game .field .cell[data = '20']{
+        background-image: url(../img/128/21.png);
+      
+    }
+    .game .field .cell[data = '21']{
+        background-image: url(../img/128/22.png);
+      
+    }
+    .game .field .cell[data = '22']{
+        background-image: url(../img/128/23.png);
+      
+    }
+    .game .field .cell[data = '23']{
+        background-image: url(../img/128/24.png);
+        
+    }
+    .game .field .cell[data = '24']{
+        background-image: url(../img/128/25.png);
+     
+    }
+    .game .field .cell[data = '25']{
+        background-image: url(../img/128/26.png);
+      
+    }
+    .game .field .cell[data = '26']{
+        background-image: url(../img/128/27.png);
+      
+    }
+    .game .field .cell[data = '27']{
+        background-image: url(../img/128/28.png);
+      
+    }
+    .game .field .cell[data = '28']{
+        background-image: url(../img/128/29.png);
+      
+    }   
+    .game .field .cell[data = '29']{
+        background-image: url(../img/128/30.png);
+        
+    }
+    .game .field .cell[data = '30']{
+        background-image: url(../img/128/31.png);
+     
+    }
+    .game .field .cell[data = '31']{
+        background-image: url(../img/128/32.png);
+      
+    }
+    .game .field .cell[data = '32']{
+        background-image: url(../img/128/33.png);
+      
+    }
+    .game .field .cell[data = '33']{
+        background-image: url(../img/128/34.png);
+      
+    }
+    .game .field .cell[data = '34']{
+        background-image: url(../img/128/35.png);
+      
+    }
+    .game .field .cell[data = '35']{
+        background-image: url(../img/128/36.png);
+      
+    }
+    .game .field .cell[data = '36']{
+        background-image: url(../img/128/37.png);
+      
+    }
+    .game .field .cell[data = '37']{
+        background-image: url(../img/128/38.png);
+      
+    }
+        
+    .game .field .cell[data = '38']{
+        background-image: url(../img/128/39.png);
+        
+    }
+    .game .field .cell[data = '39']{
+        background-image: url(../img/128/40.png);
+     
+    }
+    .game .field .cell[data = '40']{
+        background-image: url(../img/128/41.png);
+      
+    }
+    .game .field .cell[data = '41']{
+        background-image: url(../img/128/42.png);
+      
+    }
+    .game .field .cell[data = '42']{
+        background-image: url(../img/128/43.png);
+      
+    }
+    .game .field .cell[data = '43']{
+        background-image: url(../img/128/44.png);
+      
+    }
+    .game .field .cell[data = '44']{
+        background-image: url(../img/128/45.png);
+      
+    }
+    .game .field .cell[data = '45']{
+        background-image: url(../img/128/46.png);
+      
+    }
+    .game .field .cell[data = '46']{
+        background-image: url(../img/128/47.png);
+      
+    } 
+    .game .field .cell[data = '47']{
+        background-image: url(../img/128/48.png);
+        
+    }
+    .game .field .cell[data = '48']{
+        background-image: url(../img/128/49.png);
+     
+    }
+    .game .field .cell[data = '49']{
+        background-image: url(../img/128/50.png);
+      
+    }
+    
 
 
 
